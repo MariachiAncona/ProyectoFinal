@@ -1,43 +1,22 @@
-import java.io.*;
-import java.util.*;
 
-public class User {
+class User
+{
+     String nick;
+     String pass;                     
 
-	String nickname;
-	String password;
-	int id;
-
-	//public User{}
-
-	public User(String nickname, String password, int id){
-		//super();
-		this.nickname = nickname;
-		this.password = password;
-		this.id = id;
-	}
- 	
- 	public String getNickname() {
-        return nickname;
+     void setNick(String n){
+        nick = n;
+     }
+     
+     String getNick(){
+        return nick;
+     }
+     
+     void setPass(String p){
+        pass = p;
      }
 
-     public void setNickname(String nickname) {
-        this.nickname = nickname;
+     String getPass(){
+        return pass;
      }
-
-     public String getPass() {
-         return password;
-     }
-
-     public void setPass(String password) {
-          this.password = password;
-     }
-
-     public int getId() {
-         return id;
-     }
-
-     public void setId(int edad) {
-          this.id = id;
-     }
-
 }
